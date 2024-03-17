@@ -1,0 +1,21 @@
+<%= render 'layouts/navbar' %>
+
+<p style="color: green"><%= notice %></p>
+
+<div class="photosHead">
+    <h1>Photos</h1>
+    <%= link_to "New photo", new_photo_path, class: "btn btn-primary" %>
+</div>
+
+<div id="photos">
+  <% @photos.each do |photo| %>
+      <div class="galleryImg">
+          <div class="photoPost">
+              <%= render photo %>
+          </div>
+        <p>
+        <%= link_to "Show this photo", photo %>
+        </p>
+      </div>
+  <% end %>
+</div>

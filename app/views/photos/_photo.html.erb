@@ -1,0 +1,29 @@
+<div id="<%= dom_id photo %>">
+    <div class="photoImg">
+        <%= image_tag photo.image %>
+    </div>
+    <p>
+        <strong>Alttext:</strong>
+        <%= photo.alttext %>
+    </p>
+
+    <p>
+        <strong>Filename:</strong>
+        <%= photo.filename %>
+    </p>
+
+    <p>
+        <strong>Location:</strong>
+        <%= photo.location %>
+    </p>
+
+    <p>
+        <strong>Created at:</strong>
+        <%= photo.created_at %>
+    </p>
+    <p>
+        <strong>Updated at:</strong>
+        <%= photo.updated_at %>
+    </p>
+
+</div>
