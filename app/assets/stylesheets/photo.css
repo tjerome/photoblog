@@ -1,10 +1,5 @@
 /* Show Photos Page - Gallery */
-#photos {
-    display: inline-flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
+.photos {
 }
 
 .photosHead {
@@ -24,6 +19,7 @@
 
 .galleryImg {
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .photoImg {
@@ -39,4 +35,8 @@
 
 .photoImg img {
     max-width: 75%;
+}
+
+.photoUp {
+    margin-left: 4%;
 }

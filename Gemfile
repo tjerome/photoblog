@@ -69,3 +69,5 @@ end
 gem "devise", "~> 4.9"
 
 gem "jquery-rails", "~> 4.6"
+
+gem "image_processing", "~> 1.0"

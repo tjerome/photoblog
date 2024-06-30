@@ -7,4 +7,9 @@ class Photo < ApplicationRecord
             self.filename = image.filename.to_s
         end
     end
+
+    def thumbnail
+        return unless image.attached?
+        image.variant(resize_to_limit: [100, 100])
+    end
 end
