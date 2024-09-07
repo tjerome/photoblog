@@ -1,4 +1,11 @@
 <h1>tylerjerome</h1>
 <div class="index">
-Hello World!
+    <p>Hi, I'm Tyler. I'm a software engineer and I love photography.</p>
+    <p>Check out some snaps from my travels. Find me on Instagram at: <a href="https://www.instagram.com/tylerjero.me/">tylerjero.me</a></p>
+
+    <% @photos.each do |photo|  %>
+    <div class="indexImg">
+        <%= image_tag photo.image %>
+    </div>
+    <% end %>
 </div>

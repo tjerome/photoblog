@@ -21,5 +21,10 @@ test:
   database: storage/test.sqlite3
 
 production:
-  <<: *default
-  database: storage/production.sqlite3
+  adapter: postgresql # or mysql2 if using MySQL
+  encoding: unicode
+  database: photoblog
+  pool: 5
+  username: tyler
+  password: aA1042728!!!rt
+  host: localhost
